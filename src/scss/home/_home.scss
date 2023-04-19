@@ -19,3 +19,13 @@ main {
   display: flex;
   gap: 12px;
 }
+
+@media (max-width:600px) {
+  .container-img img {
+    width: 100px;
+    height: 100px;
+  }
+  #input-search {
+    max-width: 200px;
+  }
+}
