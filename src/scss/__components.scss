@@ -21,3 +21,20 @@
   border: 1px solid #0000;
   background: linear-gradient($c1, $c1) padding-box, $g2 border-box;  
 }
+
+.container-search {
+  display: flex;
+  gap: 10px;
+}
+
+@media (max-width:800px) {
+  #input-search {
+    max-width: 350px;
+  }
+}
+
+@media (max-width:600px) {
+  #input-search {
+    max-width: 200px;
+  }
+}
