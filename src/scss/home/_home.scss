@@ -1,0 +1,21 @@
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-img {
+  margin-top: 100px;
+}
+
+.container-search {
+  display: flex;
+  gap: 12px;
+}

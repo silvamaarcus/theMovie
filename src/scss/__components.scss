@@ -7,3 +7,17 @@
   padding: 12px;
   cursor: pointer;
 }
+
+#input-search {
+  width: 500px;
+  height: 52px;
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  color: $c6;
+}
+#input-search:focus {
+  outline: none;
+  border: 1px solid #0000;
+  background: linear-gradient($c1, $c1) padding-box, $g2 border-box;  
+}

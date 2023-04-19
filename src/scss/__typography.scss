@@ -1,3 +1,25 @@
-.div-title-bg {
-  font: 700 3rem/1 "Manrope", sans-serif;
+@import "../scss/_colors";
+
+.font-title-bg {
+  font: 600 3rem/1 "Manrope", sans-serif;
+}
+
+.font-title-gr {
+  font: 800 2rem/1 "Manrope", sans-serif;
+  color: $g2;
+}
+
+.font-menu {
+  font: 700 1.25rem/1.5 "Manrope", sans-serif;
+  color: $g2;
+}
+
+.font-body-subTitle {
+  font: 700 1.25rem/1.5 "Manrope", sans-serif;
+  color: $c6;
+}
+
+.font-body {
+  font: 600 1rem/1.5 "Manrope", sans-serif;
+  color: $c5;
 }
