@@ -1,10 +1,6 @@
 .font-title-bg {
-  font: 600 3rem/1 "Manrope", sans-serif;
-}
-
-.font-title-gr {
-  font: 800 2rem/1 "Manrope", sans-serif;
-  color: linear-gradient(134.17deg, #1cafde 7.82%, #194a93 100.33%);
+  font: 600 2rem/1 "Manrope", sans-serif;
+  color: #f3eeee;
 }
 
 .font-menu {
@@ -18,7 +14,7 @@
 
 .font-body {
   font: 600 1rem/1.5 "Manrope", sans-serif;
-  color: #cdcccc;
+  color: #8a8787;
 }
 
 .font-gradient {
@@ -43,7 +39,6 @@ body {
   font-family: "Manrope", sans-serif;
   background: linear-gradient(to bottom, #0f0e37 5.45%, #080817 51.32%, #000000 93.48%);
   width: 100%;
-  height: 100vh;
   background-repeat: no-repeat;
 }
 
@@ -56,7 +51,7 @@ body {
 .btn-primary {
   font: 700 1.5rem/1 "Manrope", sans-serif;
   background: linear-gradient(134.17deg, #1cafde 7.82%, #194a93 100.33%);
-  color: linear-gradient(172.92deg, #0F0E37 5.45%, #080817 51.32%, #000000 93.48%);
+  color: #0f0e37;
   border: none;
   border-radius: 10px;
   padding: 12px;
@@ -95,6 +90,7 @@ body {
 }
 main {
   max-width: 1200px;
+  height: 100vh;
   margin: 0 auto;
 }
 

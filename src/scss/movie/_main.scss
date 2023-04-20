@@ -1,0 +1,53 @@
+.main {
+  margin: 52px 0;
+  background: $g0;
+  border-image: $g2 1;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 1px;
+}
+
+.main-container {
+  padding: 50px 30px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
+
+.container-img {
+  max-width: 300px;
+  height: 450px;
+  margin-right: 20px;
+}
+
+.container-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+aside {
+  padding: 12px 0;
+  color: $c3;
+}
+
+.info-plot,
+.info-autors {
+  margin-top: 32px;
+}
+
+.info-autors {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.btn-trailer {
+  margin-top: 32px; 
+}
+
+.btn-trailer a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #0f0e37;
+}
