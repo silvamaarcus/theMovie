@@ -1,0 +1,26 @@
+.container-cards {
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 20px;
+}
+
+.card {
+  max-width: 138px;
+  // height: 245px;
+  background: $g0;
+  border-image: $g2 1;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 2px;
+}
+
+.card-photo img {
+  width: 100%;
+  height: auto;
+}
+
+.card-info { 
+  padding: 12px 0;
+  text-align: center;
+}
