@@ -1,0 +1,39 @@
+.footer {
+  margin-top: 100px;
+  color: $c6;
+}
+
+.footer-container {
+  border-top: 2px solid #1cafde;
+  padding: 32px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr;
+}
+
+.container-menu {
+  display: flex;
+  gap: 100px;
+}
+
+.container-menu ul {
+  display: grid;
+  gap: 12px;
+}
+
+.container-menu a {
+  color: $c6;
+}
+
+.footer-container p {
+  text-align: end;
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .footer-container p {
+    text-align: left;
+  }
+}

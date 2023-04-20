@@ -19,3 +19,9 @@
   padding-bottom: 8px;
   width: 100%;
 }
+
+@media (max-width:400px) {
+  .content-info {
+    width: 200px;
+  }
+}
