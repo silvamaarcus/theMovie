@@ -163,4 +163,19 @@ aside {
   align-items: center;
   gap: 8px;
   color: #0f0e37;
+}
+
+@media (max-width: 600px) {
+  .main-container {
+    grid-template-columns: 1fr;
+  }
+  .container-img {
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  .info-autors {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
 }/*# sourceMappingURL=movie.css.map */
