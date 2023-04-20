@@ -269,7 +269,11 @@ aside {
 
 .footer {
   margin-top: 100px;
+<<<<<<< HEAD
   color: #f3eeee;
+=======
+  color: #fff;
+>>>>>>> 194b8b61bb0dbaf22cf3550126ff40bbe23f97cc
 }
 
 .footer-container {
@@ -289,6 +293,7 @@ aside {
   gap: 12px;
 }
 
+<<<<<<< HEAD
 .container-menu a {
   color: #f3eeee;
 }
@@ -305,4 +310,8 @@ aside {
   .footer-container p {
     text-align: left;
   }
+=======
+.footer-container p {
+  text-align: end;
+>>>>>>> 194b8b61bb0dbaf22cf3550126ff40bbe23f97cc
 }/*# sourceMappingURL=movie.css.map */
