@@ -12,15 +12,16 @@
   <title>The Movie | NomeFilme</title>
 </head>
 
-<body id="result-search">
+<body>
   <div class="container-desktop">
+
     <section class="header">
       <a href="./index.html">
         <img src="./src/img/logo.svg" alt="The Movie">
       </a>
       <div class="container-search">
         <input type="text" name="input-search" id="input-search" class="font-body" placeholder="Busca por um filme...">
-        <button type="submit" class="btn-primary"><img src="./src/img/icon-search.svg"></button>
+        <button type="submit" class="btn-primary"><img src="./src/img/icon-search.svg" id="btn-search"></button>
       </div>
       <div class="header-menu">
         <ul class="font-menu">
@@ -28,44 +29,38 @@
           <li><a href="./" class="font-gradient">Séries</a></li>
         </ul>
       </div>
-    </section>  
+    </section>
 
     <section class="main">
       <div class="main-container">
         <div class="container-img">
-          <img src="./src/img/cover.jpg" id="cover-img">
+          <img src="" id="movie-poster">
         </div>
 
         <div class="container-info">
           <div class="info-title">
-            <h1 class="font-title-bg">Homem-Formiga e a Vespa: Quantumania (2023)</h1>
-            <aside>Ação, Aventura, ficção científica • <span>2h35m</span> </aside>
+            <h1 class="font-title-bg" id="movie-title"></h1>
+            <aside id="movie-subTitle"></aside>
           </div>
 
           <div class="info-plot">
-            <h4 class="font-body-subTitle">Sinopse</h4>
-            <p class="font-body">Scott Lang e Hope van Dyne em suas jornadas como super-heróis. Scott e sua família são puxados para o Reino Quântico, onde eles precisarão enfrentar um novo e terrível vilão: Kang, o Conquistador e M.O.D.O.K..</p>
+            <!-- <h4 class="font-body-subTitle">Sinopse</h4> -->
+            <p class="font-body" id="movie-synopsis"></p>
           </div>
 
           <div class="info-autors">
             <div>
-              <h4 class="font-body-subTitle">Stan Lee</h4>
-              <p class="font-body">Characters</p>
+              <p class="font-body-subTitle">Writer</p>
+              <p class="font-body" id="writers"></p>
             </div>
-
             <div>
-              <h4 class="font-body-subTitle">Stan Lee</h4>
-              <p class="font-body">Characters</p>
-            </div>
-
-            <div>
-              <h4 class="font-body-subTitle">Stan Lee</h4>
-              <p class="font-body">Characters</p>
+              <p class="font-body-subTitle">Directors</p>
+              <p class="font-body" id="directors"></p>
             </div>
           </div>
 
           <button class="btn-trailer btn-primary">
-            <a href="https://www.youtube.com/">
+            <a href="" id="link-trailer">
               <img src="./src/img/youtube.svg">
               <p>ASSISTA AO TRAILER</p>
             </a>
@@ -75,36 +70,40 @@
     </section>
 
     <section class="cast">
-      <h3 class="font-menu font-gradient">Elenco</h3>
+      <h3 class="font-menu font-gradient">Cast</h3>
       <div class="container-cards">
-        <div class="card">
-          <div class="card-photo">
-            <img src="./src/img/actor.jpg " width="130" height="175">
-          </div>
-          <div class="card-info">
-            <p class="font-body-subTitle">Paull Rudd</p>
-            <p class="font-body">Ant Men</p>
-          </div>
-        </div>
+        <ul class="card-info" id="cast-list"></ul>
       </div>
 
     </section>
 
     <section class="data">
-      <h3 class="font-menu font-gradient">Ficha Técnica</h3>
+      <h3 class="font-menu font-gradient">Information</h3>
       <div class="data-content">
         <div class="content-info">
-          <p class="font-body-subTitle">Título original</p>
-          <p class="font-body">Ant-Man and the Wasp: Quantumania</p>
+          <p class="font-body-subTitle">Released</p>
+          <p class="font-body" id="movie-released"></p>
+        </div>
+        <div class="content-info">
+          <p class="font-body-subTitle">Country</p>
+          <p class="font-body" id="movie-country"></p>
+        </div>
+        <div class="content-info">
+          <p class="font-body-subTitle">Box Office</p>
+          <p class="font-body" id="movie-BoxOffice"></p>
+        </div>
+        <div class="content-info">
+          <p class="font-body-subTitle">Rating  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/575px-IMDB_Logo_2016.svg.png?20200406194337" width="36px"> </p>
+          <p class="font-body" id="movie-rating"></p>
         </div>
       </div>
 
     </section>
 
     <section class="carousel">
-      <h3 class="font-menu font-gradient">Imagens</h3>
-      <div class="carousel-gallery">
-        <img src="./src/img/wp.jpg" width="500" height="300">
+      <h3 class="font-menu font-gradient">Wallpapers</h3>
+      <div class="carousel-gallery" id="movie-wallpapers">
+        <!-- <img src="" width="500" height="300"> -->
       </div>
     </section>
 
@@ -122,13 +121,6 @@
           </ul>
           <ul>
             <li class="font-gradient font-menu-footer">Social</li>
-            <li><a href="./">Twitter</a></li>
-            <li><a href="./">YouTube</a></li>
-            <li><a href="./"></a>Filmes</li>
-            <li><a href="./"></a>Séries</li>
-          </ul>
-          <ul>
-            <li class="font-gradient font-menu-footer">Social</li>
             <li><a href="./"></a>Twitter</li>
             <li><a href="./"></a>YouTube</li>
           </ul>
@@ -138,8 +130,12 @@
       </div>
     </section>
 
+
+
   </div>
-  <script type="module" src="./src/js/script.js"></script>
+
+  <!-- <script src="./src/js/marcus.js"></script> -->
+  <script type="module" src="./src/js/app.js"></script>
 </body>
 
 </html>

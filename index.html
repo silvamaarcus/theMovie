@@ -18,14 +18,15 @@
       <div class="container-img">
         <img src="./src/img/logo-big.png" alt="TheMovie" width="300" height="300">
       </div>
-      <div class="container-search">
-        <input type="text" name="input-search" id="input-search" class="font-body" placeholder="Busca por um filme...">
+      <form action="movie.html" method="get" class="container-search">
+        <input type="text" id="input-search" class="font-body" placeholder="Busca por um filme..." name="q" required>
         <button type="submit" class="btn-primary" id="btn-search"><img src="./src/img/icon-search.svg"></button>
-      </div>
+      </form>
     </div>
   </main>
 
-  <script type="module" src="./src/js/script.js"></script>
+  <!-- <script src="./src/js/marcus.js"></script> -->
+  <script type="module" src="./src/js/app.js"></script>
 </body>
 
 </html>
