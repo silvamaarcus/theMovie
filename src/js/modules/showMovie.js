@@ -11,9 +11,8 @@ export default function showMovie() {
     .then((movie) => {
       document.getElementById("movie-poster").src = movie.Poster;
 
-      document.getElementById(
-        "movie-title"
-      ).textContent = `${movie.Title} (${movie.Year})`;
+      document.getElementById("movie-title").textContent = `${movie.Title} (${movie.Year})`;
+      document.getElementById("title-page").textContent = `The Moive | ${movie.Title} (${movie.Year})`;
 
       document.getElementById(
         "movie-subTitle"
