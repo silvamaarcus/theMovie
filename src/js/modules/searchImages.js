@@ -21,6 +21,3 @@ export default function searchImages() {
     })
     .catch((error) => console.log(error));
 }
-
-// exemplo de uso
-// searchImages("gatos fofos");
