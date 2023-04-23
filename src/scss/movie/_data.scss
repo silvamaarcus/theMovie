@@ -21,7 +21,10 @@
 }
 
 @media (max-width: 400px) {
+  .data-content {
+    grid-template-columns: 1fr;
+  }
   .content-info {
-    width: 200px;
+    max-width: 200px;
   }
 }
