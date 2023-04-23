@@ -72,7 +72,7 @@ export default function showMovie() {
       document.getElementById("movie-rating").textContent = `${movie.imdbRating}/10`;
 
 
-      document.getElementById("movie-wallpapers").innerHTML = `https://www.wallpaperflare.com/search?wallpaper=avengers+2012&sort=relevance`;
+      // document.getElementById("movie-wallpapers").innerHTML = `https://www.wallpaperflare.com/search?wallpaper=avengers+2012&sort=relevance`;
 
       
     })

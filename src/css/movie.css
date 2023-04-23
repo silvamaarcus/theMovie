@@ -121,8 +121,7 @@ body {
   -o-border-image: linear-gradient(134.17deg, #1cafde 7.82%, #194a93 100.33%) 1;
      border-image: linear-gradient(134.17deg, #1cafde 7.82%, #194a93 100.33%) 1;
   border-style: solid;
-  border-radius: 10px;
-  border-width: 1px;
+  border-width: 3px;
 }
 
 .main-container {
@@ -138,7 +137,7 @@ body {
   margin-right: 20px;
 }
 
-.container-img img {
+#movie-poster {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
@@ -146,7 +145,7 @@ body {
 
 aside {
   padding: 12px 0;
-  color: #585858;
+  color: #8a8787;
 }
 
 .info-plot,
@@ -156,7 +155,7 @@ aside {
 
 .info-autors {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .btn-trailer {
@@ -178,7 +177,14 @@ aside {
     display: none;
   }
 }
+@media (max-width: 400px) {
+  .info-autors {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
 .container-cards {
+  margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
@@ -188,22 +194,17 @@ aside {
   padding: 12px 0;
   text-align: center;
   display: flex;
-  gap: 40px;
-  flex-wrap: nowrap;
-  color: #f3eeee;
-}
-
-.card-info img {
-  width: 138px;
-  height: auto;
+  gap: 32px;
 }
 
 .card-info li {
-  background: rgba(255, 255, 255, 0.05);
-  color: linear-gradient(134.17deg, #1cafde 7.82%, #194a93 100.33%);
   padding: 12px 16px;
-  border: none;
-  border-radius: 10px;
+  color: #f3eeee;
+  background: rgba(255, 255, 255, 0.05);
+  -o-border-image: linear-gradient(134.17deg, #1cafde 7.82%, #194a93 100.33%) 1;
+     border-image: linear-gradient(134.17deg, #1cafde 7.82%, #194a93 100.33%) 1;
+  border-style: solid;
+  border-width: 2px;
 }
 
 .data {
@@ -221,7 +222,7 @@ aside {
 }
 
 .content-info {
-  max-width: 300px;
+  width: 300px;
 }
 
 .content-info p {
