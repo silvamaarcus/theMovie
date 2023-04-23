@@ -265,6 +265,11 @@ aside {
   background-color: #1cafde; /* cor da alça da barra de rolagem ao passar o mouse */
 }
 
+.carousel-gallery img {
+  width: auto;
+  max-height: 400px;
+}
+
 .footer {
   margin-top: 100px;
   color: #f3eeee;

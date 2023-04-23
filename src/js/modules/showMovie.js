@@ -24,27 +24,27 @@ export default function showMovie() {
 
       document.getElementById("directors").textContent = movie.Director;
 
-      fetch(
-        `https://www.googleapis.com/youtube/v3/search?part=id&q=${movieResult}+${movie.Year}+trailer&type=video&key=${youtubeApiKey}`
-      )
-        .then((response) => response.json())
-        .then((data) => {
-          const trailerId = data.items[0].id.videoId;
-          // Criar link para o trailer do filme no YouTube
-          const trailerLink = `https://www.youtube.com/watch?v=${trailerId}`;
-          console.log(
-            `Link para o trailer do filme "${movieResult}": ${trailerLink}`
-          );
+      // fetch(
+      //   `https://www.googleapis.com/youtube/v3/search?part=id&q=${movieResult}+${movie.Year}+trailer&type=video&key=${youtubeApiKey}`
+      // )
+      //   .then((response) => response.json())
+      //   .then((data) => {
+      //     const trailerId = data.items[0].id.videoId;
+      //     // Criar link para o trailer do filme no YouTube
+      //     const trailerLink = `https://www.youtube.com/watch?v=${trailerId}`;
+      //     console.log(
+      //       `Link para o trailer do filme "${movieResult}": ${trailerLink}`
+      //     );
 
-          // Add o link do trailer no html.
-          document.getElementById("link-trailer").href = trailerLink;
-        })
-        .catch((error) =>
-          console.error(
-            "Erro ao buscar informações do trailer do filme:",
-            error
-          )
-        );
+      //     // Add o link do trailer no html.
+      //     document.getElementById("link-trailer").href = trailerLink;
+      //   })
+      //   .catch((error) =>
+      //     console.error(
+      //       "Erro ao buscar informações do trailer do filme:",
+      //       error
+      //     )
+      //   );
 
       const castNames = movie.Actors;
       const arrayNames = castNames.split(", ");
@@ -68,12 +68,7 @@ export default function showMovie() {
 
       document.getElementById("movie-BoxOffice").textContent = movie.BoxOffice;
 
-      document.getElementById("movie-rating").textContent = `${movie.imdbRating}/10`;
-
-
-      // document.getElementById("movie-wallpapers").innerHTML = `https://www.wallpaperflare.com/search?wallpaper=avengers+2012&sort=relevance`;
-
-      
+      document.getElementById("movie-rating").textContent = `${movie.imdbRating}/10`;     
     })
 
     .catch((error) =>

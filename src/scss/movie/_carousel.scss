@@ -21,3 +21,8 @@
 .carousel-gallery::-webkit-scrollbar-thumb:hover {
   background-color: #1cafde; /* cor da alça da barra de rolagem ao passar o mouse */
 }
+
+.carousel-gallery img {
+  width: auto;
+  max-height: 400px;
+}
