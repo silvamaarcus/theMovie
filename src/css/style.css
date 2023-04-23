@@ -29,7 +29,8 @@
   text-decoration: none;
 }
 
-*, a {
+*,
+a {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -44,6 +45,7 @@ body {
   background: linear-gradient(to bottom, #0f0e37 5.45%, #080817 51.32%, #000000 93.48%);
   width: 100%;
   background-repeat: no-repeat;
+  overflow-x: hidden;
 }
 
 .container-desktop {
