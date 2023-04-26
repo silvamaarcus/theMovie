@@ -9,15 +9,36 @@
 .data-content {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 32px;
 }
 
-.content-info {
-  width: 300px;
-}
 .content-info p {
   padding-bottom: 8px;
   width: 100%;
+}
+
+.content-info p.rating-active {
+  position: relative;
+}
+.content-info p.rating-active::after {
+  content: "IMBd";
+  position: absolute;
+  display: inline-block;
+  align-items: center;
+  left: 58px;
+  background-color: #eabd00;
+  color: #000;
+  padding: 4px;
+  border-radius: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  top: -4px;
+}
+
+@media (max-width: 800px) {
+  .data-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
 }
 
 @media (max-width: 400px) {

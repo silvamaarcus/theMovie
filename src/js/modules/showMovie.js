@@ -53,13 +53,10 @@ export default function showMovie() {
 
       arrayNames.forEach((actor) => {
         const newDiv = document.createElement("div");
-        // const artistImg = document.createElement("img");
         const artist = document.createElement("li");
         castList.appendChild(newDiv);
         newDiv.appendChild(artist);
         artist.textContent = actor;
-        // artistImg.setAttribute("src", "#");
-        // artistImg.setAttribute("id", "profile");
       });
 
       document.getElementById("movie-released").textContent = movie.Released;
@@ -67,8 +64,9 @@ export default function showMovie() {
       document.getElementById("movie-country").textContent = movie.Country;
 
       document.getElementById("movie-BoxOffice").textContent = movie.BoxOffice;
-
-      document.getElementById("movie-rating").textContent = `${movie.imdbRating}/10`;     
+      
+      document.getElementById("movie-rating").textContent = `${movie.imdbRating}/10`; 
+      document.getElementById("rating-img").classList.add('rating-active');
     })
 
     .catch((error) =>
